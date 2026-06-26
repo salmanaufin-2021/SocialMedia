@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>SocialSphere</h1>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <div class="user-section">
+    <input
+        type="text"
+        id="usernameInput"
+        placeholder="Enter your username">
+
+    <button id="saveUserBtn">
+        Save Username
+    </button>
+</div>
+
+    <div class="create-post">
+
+        <textarea
+            id="postInput"
+            placeholder="What's on your mind?"
+            maxlength="200"></textarea>
+
+        <div class="post-footer">
+            <span id="counter">0 / 200</span>
+            <button id="postBtn">Post</button>
+        </div>
+
+    </div>
+
+    <div id="feed"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

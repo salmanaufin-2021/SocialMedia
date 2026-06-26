@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:750px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:3rem;
+    margin-bottom:25px;
+    letter-spacing:2px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+}
+
+.create-post{
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    margin-bottom:25px;
+}
+
+textarea{
+    width:100%;
+    min-height:120px;
+    border:none;
+    outline:none;
+    resize:none;
+    padding:15px;
+    border-radius:15px;
+    background:#f5f5f5;
+    font-size:16px;
+}
+
+.post-footer{
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#counter{
+    color:#666;
+    font-weight:600;
+}
+
+.user-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.user-section input{
+    flex:1;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.user-section button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#postBtn{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+#postBtn:hover{
+    transform:translateY(-2px);
+}
+
+.post-card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    animation:slideIn 0.4s ease;
+}
+
+.post-header{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.avatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:20px;
+    margin-right:12px;
+}
+
+.username{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.time{
+    color:gray;
+    font-size:13px;
+}
+
+.post-content{
+    margin:15px 0;
+    font-size:17px;
+    line-height:1.5;
+}
+
+.post-actions{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.like-btn,
+.delete-btn{
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.like-btn{
+    background:#ff4d6d;
+    color:white;
+}
+
+.like-btn:hover{
+    transform:scale(1.05);
+}
+
+.delete-btn{
+    background:#343a40;
+    color:white;
+}
+
+.delete-btn:hover{
+    transform:scale(1.05);
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
